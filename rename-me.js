@@ -13,13 +13,13 @@ var ingredientsPrimary = ["2 cans of diced tomatoes in sauce",
     "2 cloves diced garlic",
     "1/2 cup diced onion",
     "1 cup minced basil"];
-var ingredientsSecondary = ["Vodka 1 1/2 cups",  , "chicken cubes" , 
+var ingredientsSecondary = ["1 and 1/2 cups of vodka",  , "chicken cubes" , 
 	" 1 pint heavy cream"];
 
 var cookTime = 20;
 var servings = 10;
-var //need a number variable
-var //need a number variable
+var thickeningTime = 5
+var coolingTime = 3
 var didTheVodkaBurnOff = true
 var panIsHot= true
 var isItFinished = true
@@ -49,5 +49,44 @@ var gettingStarted = function (vodkaSauceParts, panIsHot)
 	
 	
 	
-//
+// Boolean
 
+var isItAnyGood = function (notBurned, sauceThickened)
+	if (notBurned === true)
+	{console.log("Congratulations you managed to not burn the sauce.");
+	if (sauceThickened === true)
+	{console.log("Wow the sauce actually thickened up!.... I didn't think that would work...")}
+	else { console.log("So that didn't work...")}
+	return true;};
+	
+	
+// String
+
+var actuallyCooking = function (cookingAddIns)
+{var ingredientsToAdd  = cookingAddIns;
+	console.log("Try not to mess this up.")
+	console.log("First you need to slowly add " + ingredientsSecondary[0] + " and be very careful not to splash it vodka is flammable");
+	console.log("Wait until that stops sizzling then add " + ingredientsSecondary[1] + " to the mix and stir well.");
+	console.log("One those are well mixed together add in the " +ingredientsSecondary[2] + ". Make sure they are spread out.");
+	return ingredientsToAdd;}
+	
+// Maths
+
+var	overallCookTime = function (simmerTime) 
+{var minutes = cookingWell;
+	while (simmerTime >= 0)
+	{console.log("That is simmering nicely. Should only be " + simmertime + " minutes remaining. DON'T LEAVE IT LONGER THAN THAT.");
+	simmerTime -= 3;}
+	
+	console.log("I didn't expect you to get this far. Well so far it hasn't burned so lets move on.");
+	return minutes;};
+	
+// 	More Maths!
+
+var howLongToServe = function (coolTime, thickenTime, serveTime)
+{var howLongToCool = serveTime / (coolTime, thickenTime);
+	console.log("After you are done cooking your sauce you need to let it cool for " + howLongToCool + " or you will end up burning yourself.");
+	return howLongToCool
+	
+	
+	
