@@ -17,7 +17,7 @@ var ingredientsSecondary = ["1 and 1/2 cups of vodka",  , "chicken cubes" ,
 	" 1 pint heavy cream"];
 
 var cookTime = 20;
-var servings = 10;
+var platingTime = 6;
 var thickeningTime = 5
 var coolingTime = 3
 var didTheVodkaBurnOff = true
@@ -88,5 +88,17 @@ var howLongToServe = function (coolTime, thickenTime, serveTime)
 	console.log("After you are done cooking your sauce you need to let it cool for " + howLongToCool + " or you will end up burning yourself.");
 	return howLongToCool
 	
-	
-	
+
+
+// Code 
+
+readyToCook(cookingMaterials)
+var vodkaSauceParts = gettingStarted(ingredientsPrimary, panIsHot);
+var ingredientsToAdd = actuallyCooking(ingredientsSecondary);
+var minutes = overallCookTime(cookTime);
+var howLongToCool = howLongToServe(thickeningTime, coolingTime, platingTime);
+
+console.log("The best thing about Vodka Sauce is when you combine " + vodkaSauceParts + " and " + ingredientsToAdd + " is that you get something tastier and very different to it's component parts.");
+console.log("Also since it only takes " + minutes + " to cook it really isn't too big of a job.");
+console.log(" Just be sure to let it sit for " + howLongToCool + " before you eat it to prevent burning your mouth.");
+console.log("Enjoy!")	
